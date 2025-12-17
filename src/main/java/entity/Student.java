@@ -20,4 +20,22 @@ public class Student {
     public void setName(String name){
         this.name=name;
     }
+    public String getDept(){
+        return dept;
+    }
+    public void setDept(String dept){
+        this.dept=dept;
+    }
+    public LocalDate getDob(){
+        return dob;
+    }
+    public void setDob(String dob){
+        this.dob=dob;
+    }
+    public float getCgpa(){
+        return cgpa;
+    }
+    public void setCgpa(float cgpa){
+        this.dept=cg;
+    }
 }
