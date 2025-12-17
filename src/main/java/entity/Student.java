@@ -38,4 +38,8 @@ public class Student {
     public void setCgpa(float cgpa){
         this.cgpa=cgpa;
     }
+    public Student(){
+
+    }
+    public Student(Long id,String name,String dept,LocalDate)
 }
