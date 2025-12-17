@@ -4,5 +4,6 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class StudentController {
-    @PostMapping
+    @PostMapping("/addStudent")
+    public Student 
 }
