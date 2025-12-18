@@ -6,7 +6,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import jakarta.validation.constraint.NotEmpty;
+import jakarta.validation.constraints.NotEmpty;
 
 @Entity
 public class Student {
