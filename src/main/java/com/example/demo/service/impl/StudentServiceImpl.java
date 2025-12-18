@@ -31,7 +31,10 @@ public class StudentServiceImpl implements StudentService{
         if(status){
             st.setId(id);
             stdrepo.save(st);
-            return "Student "
+            return "Student updated successfully";
+        }
+        else{
+            return "Student with ID "+id+" not found";
         }
     }
 }
