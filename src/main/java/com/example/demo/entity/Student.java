@@ -2,6 +2,7 @@ package com.example.demo.entity;
 
 import java.time.LocalDate;
 
+import jakarta.persistence.*;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
@@ -12,6 +13,7 @@ public class Student {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
+    @NotNull(message="Name should not be null")
     private String name;
     private String dept;
     private LocalDate dob;
