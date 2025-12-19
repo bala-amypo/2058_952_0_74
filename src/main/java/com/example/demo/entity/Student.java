@@ -9,6 +9,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.validation.constraints.*;
 
 @Entity
+@Getter
+@Setter
 public class Student {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
