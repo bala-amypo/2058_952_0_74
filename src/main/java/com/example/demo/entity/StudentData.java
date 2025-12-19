@@ -9,5 +9,11 @@ import jakarta.persistence.OneToOne;
 @Entity
 public class StudentData {
     @Id
-    @Ge
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private Long id;
+    private String name;
+    private String address;
+    private Long phone;
+    @OneToOne(mappedBy="std")
+    private Idcard idc;
 }

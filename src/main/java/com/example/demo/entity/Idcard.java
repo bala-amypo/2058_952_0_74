@@ -14,5 +14,6 @@ public class Idcard {
     private String regnum;
     private char section;
     @OneToOne
-    @JoinColumn
+    @JoinColumn(name="student_id")
+    private StudentsData std;
 }
