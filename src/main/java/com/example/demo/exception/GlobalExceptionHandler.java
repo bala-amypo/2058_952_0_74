@@ -1,6 +1,6 @@
 package com.example.demo.exception;
 
-import org.springframework.web.bind.
+import org.springframework.web.bind.MethodArgumentNotValidation;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
@@ -10,6 +10,7 @@ public class GlobalExceptionHandler {
     public String hello(){
         return "hello";
     }
+
     @ExceptionHandler(PasswordNotMatchCri.class)
     public String hi(){
         return "Hi";
